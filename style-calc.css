@@ -1,0 +1,123 @@
+
+*{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(23, 23, 3);
+    margin-top: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 28.5% 28.5% 28.5% 14.5%;
+    gap: 20px;
+    font-size: 24px;
+    grid-template-areas: 
+    "input input input input"
+    "one two three plus"
+    "four five six minus"
+    "seven eight nine multiply"
+    "clear zero del divide"
+    "equal equal equal equal";
+    color: rgb(40, 40, 38);
+    margin-top: 40px;
+    width: 40vw;
+    text-align: center;
+    font-weight: 700;
+}
+
+#numInput {
+    grid-area: input;
+    height: 100%;
+    background-color: rgba(225, 226, 227, 0.997);
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgb(101, 96, 96);
+    font-size: 32px;
+    text-align: right;
+    border: transparent;
+}
+.operation {
+    background-color: rgba(225, 226, 227, 0.997);
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgb(101, 96, 96);
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.zero {
+    grid-area: zero;
+}
+.plus {
+    grid-area: plus;
+    background-color: rgb(37, 32, 32);
+    color: aliceblue;
+}
+.minus {
+    grid-area: minus;
+    background-color: rgb(37, 32, 32);
+    color: aliceblue;
+}
+.multiply {
+    grid-area: multiply;
+    background-color: rgb(37, 32, 32);
+    color: aliceblue;
+}
+.divide {
+    grid-area: divide;
+    background-color: rgb(37, 32, 32);
+    color: aliceblue;
+}
+.delete {
+    grid-area: del;
+    background-color: rgb(37, 32, 32);
+    color: aliceblue;
+}
+.all-clear {
+    grid-area: clear;
+    background-color: rgb(37, 32, 32);
+    color: aliceblue;
+}
+.equal {
+    grid-area: equal;
+    background-color: rgb(37, 32, 32);
+    color: aliceblue;
+}
