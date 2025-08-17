@@ -22,7 +22,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: 28.5% 28.5% 28.5% 14.5%;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
     gap: 20px;
     font-size: 24px;
     grid-template-areas: 
@@ -120,4 +120,10 @@ body {
     grid-area: equal;
     background-color: rgb(37, 32, 32);
     color: aliceblue;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width : 80vw;
+    }
 }
